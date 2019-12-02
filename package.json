@@ -1,0 +1,20 @@
+{
+  "name": "crud-dynamo-nodejs",
+  "version": "1.0.0",
+  "description": "Create is open : Anyone can create a new record\r Although, when integrating with front-end, Cors has to be enabled for particular origins",
+  "main": "handlers/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^8.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-uuid": "^1.4.8",
+    "serverless-lambda-router": "^1.2.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.580.0"
+  }
+}

@@ -1,0 +1,5 @@
+environment:
+ foo: bar
+aws:
+  role: arn:aws:iam::695213755294:role/lambdaDynamoFull
+  

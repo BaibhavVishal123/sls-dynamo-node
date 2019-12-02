@@ -1,0 +1,29 @@
+service: crud-dynamo-sample
+provider:
+  name: aws
+  runtime: nodejs12.x
+  environment: ${file(./config.yml):environment}
+  role: ${file(./config.yml):aws.role}
+  #vpc: ${file(./config.yml):aws.vpc}
+#  region: us-east-1
+
+
+# define service wide environment variables here
+#  environment:
+#    variable1: value1
+functions:
+  consumer:
+    handler: handlers/handler.handler
+    events:
+      - http:
+          path: /consumer
+          method: post
+      - http:
+          path: /consumer/{id}
+          method: get
+      - http:
+          path: /consumer/{id}
+          method: put
+      - http:
+          path: /consumer/{id}
+          method: delete

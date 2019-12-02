@@ -1,0 +1,11 @@
+# package directories
+node_modules
+jspm_packages
+test.js
+
+# Serverless directories
+.serverless
+
+package-lock.json
+*.log
+*.pid
